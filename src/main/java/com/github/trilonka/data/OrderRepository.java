@@ -1,8 +1,9 @@
 package com.github.trilonka.data;
 
 import com.github.trilonka.dto.TacoOrder;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface OrderRepository {
-
-    TacoOrder save(TacoOrder tacoOrder);
+@Repository
+public interface OrderRepository extends CrudRepository<TacoOrder, Long> {
 }
