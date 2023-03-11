@@ -1,4 +1,4 @@
-package com.github.trilonka.web;
+package com.github.trilonka.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

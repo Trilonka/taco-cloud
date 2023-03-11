@@ -1,4 +1,4 @@
-package com.github.trilonka;
+package com.github.trilonka.dto;
 
 import lombok.Data;
 
