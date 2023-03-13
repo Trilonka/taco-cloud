@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <title>Taco Cloud</title>
 </head>
@@ -7,6 +7,10 @@
 
 <h1>Hello, homepage!</h1>
 <p>Go to order <a th:href="@{/design}">taco</a></p>
-
+<div sec:authorize="isAuthenticated()">
+    <form method="POST" th:action="@{/logout}">
+        <input type="submit" value="Logout">
+    </form>
+</div>
 </body>
 </html>
